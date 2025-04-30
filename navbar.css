@@ -10,6 +10,8 @@
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px ;
+    position: sticky;
+    top: 0;
 }
 
 .topnav a {
@@ -63,7 +65,11 @@
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        /*position: relative;*/
+        position: sticky;
+        top: 0;
+    }
     .topnav.responsive .icon {
         position: absolute;
         right: 0;

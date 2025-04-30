@@ -1,7 +1,7 @@
 ﻿.title{
-    background: black;
+    background: #000000;
     border-radius: 90px;
-    outline: 10px rgba(0, 168, 232, 0.50) solid;
+    outline: 10px rgb(0, 83, 115) solid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #ffffff;
     font-size: 40px;
     font-family: Ubuntu;
     font-weight: 300;

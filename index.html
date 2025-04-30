@@ -4,20 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="titles.css">
+    <link rel="stylesheet" href="presentation.css">
+    <link rel="stylesheet" href="buisnessCard.css">
+    <link rel="stylesheet" href="responsivePresentationBuisnessCard.css">
+    <link rel="stylesheet" href="item_text.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #000000;
         }
-
-
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
 
 <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
+    <a href="#" class="active">Home</a>
     <a href="#About">About me</a>
     <a href="#projects">My projects</a>
     <a href="#library">My library</a>
@@ -30,59 +35,134 @@
     </a>
 </div>
 
-<div
-     class="Presentation"
-     id="home"
-     style="
-     height: 400px;
-     background: black;
-     overflow: hidden;
-     border-radius: 50px;
-     outline: 10px rgba(0, 168, 232, 0.50) solid;
-     margin-right: 15px;
-     margin-left: 15px;
-     margin-top: 40px;">
 
-    <img class="ProfilePic"
-         style="
-         width: auto;
-         height: 100%;"
-         src="cc.png" />
+<div class="layout">
+    <div class="Presentation">
+        <img class="ProfilePic" src="cc.png" />
+    </div>
 
+    <div class="buisnessCard">
+
+        <div class="NameCarrier" >
+            <div class="name" >
+                Ahmed Oumerhouch
+            </div>
+            <div class="carrier" >
+                Software developer
+            </div>
+        </div>
+
+        <div class="Contact">
+            <a href="cv/MyCV.pdf" class="Card">
+                <img style="width: 65px; height: 55px"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASnSURBVHgB7Z1JiBVXFIZ/k5A5JjFRkCSmE0JGMiwyEUIgE24UFdt5I7hWUBEUUXEAEXQhuhcHEFw4tC5UVFRUUBcqCKI4gDOKivPs8xxvlQvt13bVPVV1znvngx/trtc1/VV1695zzn2A4ziO4ziOI08X6OYrUl/SD6QepJeRj4ekC6QDpLWkI3Ay8TWpjfSIVBMWr3M16Us4naKVdB3yRjyra6SBcDqkH+k+ijcjFW+rL5x26Um6gvLMSHWV9BGc51iM8s1ItQhK0PKW1Z10ivRaneW7SbtI95CPV0l/kH6rs/wO6WPSJThPGIz6V+8kyMAX3+QOtjMICij6DulK+hWhfXijg89xw9qnnd8fROiD1CBDl2Sd37azbB1CH6Uet0lnSXsR3tBM8QvCwfGjIObZvhjyLIncJz4m7iP9DAO8QloAuQ7dVsizHTL7xsc4PzlmlfCwBt8VNUHxQf8HOf6HfO+/DfmHdJ5Dsg2ZRxoHee4iXIk7SbeQjzdJf5LGoP6bXAxzSROgiO9JDyB75VkSH/t3EOAlyDARgretQfjYJ0IAiUcWPwJ4aLsrmhseguEQQd7O6xMk7pBv4GYw7yKEDaKQMKQnnJToQUoJQ96GkxJ9LqQadUcIN0QZbogy3BBluCHKcEOU4YYoww1RhhuiDDdEGWrDj53kEGkz6XTyM6fy/Isw4Nm0cPpM2QGhbaifY8X8DrnYeRapSCUq25DZ6Nyjlj8zp+R9azpD5iM7C0vcv2hDLDXqh0njkZ2xMFSgY8mQ6QjJBFnhkoMZMIIVQziNsw35WYOQcageK4ZwPu5N5OdGsg71WDHkPOKRWEfhWDHkLcRjIvZvxZDPEY/EOgrHiiEtiEvV5FTXXjCApdfe0cjPGBjBkiGjkK9Ihiu4RsIIlgzhkelVpE8z/E0LaSUMjWpbi4fw8PoehMKbF9E7+aypGnSLASrOMN9IWk8aglBSncL/H0rakCzvDmNYDlD1TsSkwyKvwzjWI4Yp5o1I8Zi6MtwQZbghynBDlKGtUd9CWkG6jHLohjDxzT9oIKSSHLisuIrponibk6AkyUECCUM42a3Kubt421vgWSdP4cdUDdVRS/ahcrQYUlab0REqZpPTYsiHqJ4eUIAWQ35C9WjYBzWGDCO9h+p4H2GUuHK0GPIOaQqqYxoaaEYKqX4Iz/Q2AOXTCrlZ5hoq2Zr7AstJw1EebMZSKPqWCG1jWTz31jLSTBQb4+Apa2ch9D0aJpaSUlR9yDFSf8hevXwB8mPxOIrZ56Yo2OGTNxXZsk2epQWh4T6BYvc12hALIdzPEGpDWCcRMkl4LvijCN+mkIrh19duyb9fINQhcl7WJzCCtZh6r0StaFA8QKUMN0QZbogy3BBluCHKcEOUIWGIiXLjkriNSCQMOQcn5QwikRgn4jjCRTTgIF1G+O7g8oeYenqRO4SL8jfD2YRIMyT5C8UO2lnQ31BGmlvVjFoOhXBbsh+2TqSE9kFxPJ6TFXjWHksnNEZcx1hltkyn4BeFEQiThlk6uVnExzYcBXSsiw7u/4jwdXVcmvwBbMOpptzP2EE6AMdxHMdxHMdxHMdxmoDHAkZQTpMTX9YAAAAASUVORK5CYII=" />
+                <div class="nameLOGO">
+                    curriculum vitae
+                </div>
+            </a>
+            <a href="mailto:ahmed-oumerhouch@hotmail.com" class="Card">
+                <img style="width: 65px; height: 55px"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABKCAYAAABXeBGcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS5SURBVHgB7ZxJiB5FGIZfzWg07uIelSCiuKCCu7gvuONyiSui4E0PetKDIHpwuaggioKKeBA8iOISsgeykIQskJCVQPaE7CH7NpO8L99fZAjT3f/MdP3TXf298Fz+me6u7rer6quvqhpwuVwul8vlcrlcLpfL5XIlopMQX7rGMHIq0tIh0k2OIqJiG3QeuYPcREaSU5CGjpB1ZAGZRXaihrqY/Ai7kR7Ym5YS3a17+4FchJrpUjIeaRrTl1F/k6sQQSejfHWRZ8jd6EwfN9TSM3y4xTCUrBgGDScPkTPQHJ1J7iVnoWTFMOh0WNO2B83RYXIaLHgoVaVXSeoAWQgLQ6+BvV0pawssGPqGbECNdDZ5gkxFmsGC7klh9tOoeXN+DnmPzIc1AXUyIcuYleQdROhzhlJ3kl/JdtTLkN5oQPo7uQ8JRqgKSDR4fZVsQ72MCea8Sc5FzaV0jozIixA18v6UrEb1jVlKPkf+QDS8fLVIZekN+5q8gfwEqcLxe8hYWMRXNWMUOo8jj7bKmiWZMpp8hZrUrgthCUSNg34jN8DGCFlSQvVtsgTHs8NDbcxi8i65PKfcGpBfS34hu8jM1r1XXirkbNjNKuJZQT4gVxYcpyZEhm7E0Bijsm6FBTLXF5RVxr0Pe6nCEGIWamhQYC8ZA0sBdeUcq/HE6D6O7wTTyOvIz0yr7GqW/4G1EL2Pr7VBgfXkS9ggNiuIUHZDzZ76sU7Ups2wTMBIZGdWQhDwMVmbcZ4kDAoou/AiGZFzHgUYj8CmLfajfGOUkppEnoL1J1lSx/8s+b/gfEkZpHZbtelnckXB+dQ3fURWoTxzdG2F+VcXXFv95rdkDYrTVUkZFFDUtoi8BUsJZUlh7i3kD1h/NpDcXk/r2D/JbcivveqHXiFz0f4QIEmDAgfJZNhEX96DU1OkpvHf1jHtnl8PWU3lS8gP+fW3J2FjswP9vIekDQpojl9p+7zxhzryUeRDsruNc6rWfEYuQ37+7BLyBaw5G0jZG2FQYBMs3FZTk/VQ9btWDP0FM+HEc+wj/5H7kW+M5quew+AjxkYZJJRQ/YncWnC982G1SX1Zd4vlsMDigoJjbyTfw0LtwZa3cQYJ9R1zYKmgor7pdthUgLgL+X2Ngo7XYDO/Zc1RNdKggB7iRPIYBjeFLiO1uGMCyp88bLRBAY1fPoGNX/ozYab/HQVr9gYaBLhBbaLIbTosiGhXD8Kyzf0Nnd2gQaD0z3fkZvRdm/SbstLK6R3uQHncoD5QxDYP1uH3nixTVuJlWK3p1EIVNygHRXtTyOOwBKsyATs7XIYoBnUhDWna+QFYqK2Hlcyy41QMChqBxBRjbbarRLlBFZcbVHG5QRWXG1RxuUEVlxtUcblBFZcbVHG5QRVXLINK3+1cA4WseamKYZCmALajedqBCC9mDIO03GkGmlWLtGpVs7ylfxsihkFhUfoKNEfLYCtja/EhC0lNnMzX93qGI21pCbL2sOqDSj2omV6AzXRqi2BKH7Poad3TZPI8Iir2Xn/VUG3h0BLd62CrQOse2ssctRDa/qipfS3j6kYkdepjDLqONmTFalI7LRkStqW4XC6Xy+VyuVwul8vlcrlc7egYuIIsE6nmpEcAAAAASUVORK5CYII="/>
+                <div class="nameLOGO">
+                    EMAIL
+                </div>
+            </a>
+            <a href="tel:+15144517552" class="Card">
+                <img style="width: 65px; height: 55px"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABACAYAAAD/CJKAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQOSURBVHgB7ZxZiE5hGMf/dsY6RNmaZMvYl6TQjAuRsoRS3LixpQzFhUtKXCmlcIGQyB731iiRNcuFshPGvoYxnn/PfPnKfDNz3nO+95z5zvOr390szTznPd/zPO/zvoBhGIZhNE6aIDl0F2eKU8Tm4gVxp/gWRqLgQ1MuXhf/iNU1/haPih1gJAaupJXiI/wLVLa/xGU1X2fETFuxQvyK2oOV8Yk4BkastBf3ilWoO1gZT4otYcRCF3ELGhao7M+zWTC8UyRuQ7BgZbwrDoLhjabiKvEn3ALG1+cB2KvRGyPFSrgFK+MXcQGSVT8WLFsRLlgZ74sDkVKawh99EQ0M1gqxFVJIM/hjmjgU0TAYWlRfhnZHUoPPFfYQ0cFsczlSmDX6DNhtREtPcSFShs+AXRM/I1oGIGX4DBi3SW4gWiqRMnwG7L14CposRAEL6WMw8spw8SXC12IMFjc4O8PIK+xQHET4gDHos2EdDy9MRfgWFbsmLWB4oRi6v+UarNfiMBhemST+QPBgsauxEX6TpUQR1x9+VjyE4DDIj6HBMzzTQ7yC4KvsOXSrxvAMV/c8aF0WNGinYbvPsRFkGCe7DjsDXaWGZ/qLl+CWgOwRe8HwThm0MRw0aHydbkeKCmifG5h18Uz8Jk5EsIKYn4McMu0IbVVF1adMLEkJGFcLx9j6QZOJoOUGd6A7ieegM4yGJ3pDkwmXDsh3cb3YGoZXmIQ8gFvQWFivg04XGx6ZK76De9A4Cp7a9lVczIFuelY7yuyxGAVGUpKO2uAxI66W8XDbShkilkKzx1yzJCwHePKzTFwrLoFmnS+gD0uqRuiigAf5NsCts5/dESmt5WfzIeCJmIv4v9PyFBpAS2Ac6CruQPD2VXbQ2HtkjccVxUBxVGEzdCXl+r6P4m5omWE72wHh4OhxaI3l+pnGLv9icZP4JsD33RPnw07NBIaDo/vg1t3PrtVcXq88NcNzbSNgBIIJAm8WyL5twJf8nVxt05HsZC1x8PXIleaaiISVr+Xz4ljEUOs1xieFr0RmdvznjYb/6SkGqQR6t0gb8Rb0VKlRD0z51yBccR1WPjyHYQOtDYbpNo/Q1pWe51uWDUthBIK9xyhGwF09AU8USoP0iDgBOj4Xx35YFYzA8OHjfMcu1H8dUpQy3a+A4QyvReKFYy4zIi5eFbvBCAXLlcnQkQHXHmRDZJO4HEZk9IHOPYZpZ+WS7apFMPLCDLiNheeSiQ0/t1J5V4gPmJDwYhfuQodtaTHJYGJjwfIAC+1x0LrpE9yCxX20ghs9SDIMGmcYy6BN5Fdo2A1zH6Cj4e1gxAp3n1dDM8pcq45dFN5vVYSYsa1vJbPq2MQdVWMJ9NV3U9wv3oEN5RiGYRiGM38BpkxDjdfd0AMAAAAASUVORK5CYII=                " />
+                <div class="nameLOGO">
+                    PHONE
+                </div>
+            </a>
+            <a href="https://maps.app.goo.gl/tCyn9bqTARmUurBv8" class="Card">
+                <img style="width: 65px; height: 55px"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABACAYAAAD/CJKAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVHgB7Z1HqBRZFIZ/nRmcxCSYcWYw5wiCGVHBjeLShQoqbsSAbtwatoIbFy7cmBARFBUDCqIIpmdGDGAOzyzm8Mzx/Nwq3uNpt31vV3Wdas8H36apV1WvD+feU/feut0E1cEfYjexjfi3+Gv0+XPxrnhZPCM+Qc5pgnzyvfivOEgcJQ4UfxJ/EX8Qv4uO+yC+Ft+IT8U94ibxoHhbfA8jdf4U54qH4YLx0dPX0d/OhstMIyWaiePES/APUiEvwmVoMxiJwuZuvvgQyQUr9oG4QPwZRiL8Iy5G8oFq7NLoWkYZsI9ZDlc0pB0wXmMlrF8LhpUgC4OXSD9YsS/EOdG1DU+Go7LBahi0ITC8YOm+DZUPVuwWWNPoxTRkk12xfFabDKMkmorHkV2wYg+gfsTEKMIAZB+s2P5QhrZqiNk1BuHUwQ301kbn4nhjF9QPBvvCezkCNyZpfAGOtO9EWDZcE8eL/zc4X3Nxgngr8Jy8Fys+itATLjt8v9hzYu8i5+0eHeN7XmZrVxgF4XRJSHU4Ca4JLASLh6kB52UTOxBGQUbC/0t9BjcP9jXYj9UFnH8EFNEUuggZMWff9byE4+qiY30JLVhSQVvAQmbAfZ6Vcj9GqC1gcZPlQ0exdQnHtRHbww/ey1MoQlvAHsMVHT7wf5iB4tnJZm0y/P9f3ksdjIL0QFhZz5noKfhyQPgZK8RHAedlWd8NRkH+E2vg/8XGJThnpgeLneGaymHiErjlbSHnrInuySgAq8QNCPtyG2Ybh5OOovw1IOvEH6EIbVUTJw/Pojw4l9YHyXACbqpFDdqKDlIDPXCKxbdq/ebgqAUz7WPGspxXt15RY4Zx1OIYsod9oKrmkGgMGNmKbJsirrnfDIVoDRj7jnvIjhviPihEa8DYJNYiO/jAfBoK0RowdvgbkR1skl/A8IKzzyHzV+XKh221w1FaM4zUirtQeXYg2+a4KJoDxplkVmqlTE4mxavomtYcBtJCvInKNYcsNlS/cqQ5wwjL6/WoHMvhXmI3yoArqe4g/exiJveDcrRnGDkl7kf67IyupZo8BCwuPtIcquK518B/eYJRAI6aJ7l7QGNPIicrqvKQYYSj5ovEt0gelvILxXcwEqUT0skyjlu2gJEKs5B8wGbCSI0O4lUkF6zzYivkiLz0YTEM1ioks6kX+8MVcM9fRopwvWESfRm342uJnJG3DCMX4NYLlgMDtky8DqMisN/Zi/Ds2i62hVEx+IrRRLipF99g8blrNPLZuuQarl8MWYfP7LL9ETNiLPxedOCSA1WvwH5r/A63L1SpAVsr/gUjU3qhtJ0H2N91gZE5LB44NfK1gK2GoQbupVFsVpoP2n1hqIFV3zy4PaEaB4ufcRNm25lNGe3EK/g8YBwZaQ1DHdxFYDrcMu84WNx4eSry+wsYVQ93XjuE+oDtFn+DoZqhcD8ecB9uF4Gqoho7Yr5Xxn0S+XI7fzzA1mrkAO5E2hxVyCe4LbFuqEru7wAAAABJRU5ErkJggg==                " />
+                <div class="nameLOGO">
+                    LOCATION
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
-<br><br><br>
 
-<div class="title" id="About">
+
+<br id="About">
+<br >
+<br >
+<br >
+<div class="title">
     <div class="title-title">
         About me
     </div>
 </div>
 <br>
-<div style="padding-left:16px;color: #f2f2f2;">
-    <h2>Lorem Ipsum </h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
 </div>
-<br>
-<div class="title" id="projects">
+
+<br id="projects">
+<br >
+<br >
+<br >
+<div class="title" >
     <div class="title-title">
         My projects
     </div>
 </div>
 <br>
-<div style="padding-left:16px;color: #f2f2f2;">
-    <h2>Lorem Ipsum </h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
 </div>
-<br>
-<div class="title" id="library">
+
+<br id="library">
+<br >
+<br >
+<br >
+<div class="title"   >
     <div class="title-title">
         My library
     </div>
 </div>
-<br>
-<div style="padding-left:16px;color: #f2f2f2;">
-    <h2>Lorem Ipsum </h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<br >
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
+</div>
+
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
+</div>
+
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
+</div>
+
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
+</div>
+
+<div class="ItemText" >
+    <p  style="
+    color: #ffffff;
+    word-wrap: break-word">
+        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
 </div>
 
 <script src="navbar.js"></script>

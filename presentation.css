@@ -1,0 +1,14 @@
+﻿.Presentation{
+    background: black;
+    overflow: hidden;
+    border-radius: 50px;
+    outline: 10px rgba(0, 168, 232, 0.50) solid;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.ProfilePic{
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+}

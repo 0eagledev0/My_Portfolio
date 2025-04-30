@@ -1,0 +1,99 @@
+﻿.buisnessCard{
+    height: 550px;
+    background: black;
+    overflow: hidden;
+    border-radius: 90px;
+    outline: 10px rgba(0, 168, 232, 0.50) solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display:  block;
+    margin-right: 15px;
+    margin-left: 15px
+}
+/*---------------------------------------------*/
+.NameCarrier{
+    align-self: stretch;
+    height: 130px;
+    background: linear-gradient(90deg, rgba(0, 168, 232, 0.33) 10%, rgba(0, 0, 0, 0.33) 100%);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex
+}
+.name{
+    align-self: stretch;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    font-family: Ubuntu Condensed,serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-wrap: break-word
+}
+.carrier{
+    align-self: stretch;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    font-family: Ubuntu Mono,serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-wrap: break-word
+}
+
+/*----------------------------*/
+.Contact{
+    align-self: stretch;
+    height: 601px;
+    padding: 30px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    display: flex
+}
+.Card{
+    align-self: stretch;
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(0, 168, 232, 0.60) 15%, rgba(0, 0, 0, 0.60) 42%);
+    box-shadow: 4px 4px 20px white;
+    overflow: hidden;
+    border-radius: 50px;
+    outline: 1px white solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex
+}
+.Card:hover {
+    cursor: pointer;
+    filter: brightness(5);
+}
+.nameLOGO{
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    font-family: Ubuntu,serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    margin: 0 auto;
+}

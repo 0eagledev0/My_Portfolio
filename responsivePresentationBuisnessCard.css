@@ -1,0 +1,35 @@
+﻿.layout {
+    display: flex;
+    align-items: flex-start; /* aligne leurs sommets */
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.Presentation {
+    flex: 0 0 45%;          /* prend sa largeur intrinsèque */
+    height: 550px;
+}
+.buisnessCard {
+    margin-top: 40px;
+    flex: 0 0 50%;          /* idem */
+}
+.ProfilePic{
+    display: flex;
+}
+@media screen and (max-width: 900px) {
+    .layout {
+        display: block;
+        align-items: initial;
+        margin: 0;
+    }
+    .Presentation{
+        height: 400px;
+        flex: none;
+    }
+    .buisnessCard{
+        flex: none;
+        margin-top: 40px;
+    }
+    .ProfilePic{
+        display: block;
+    }
+}
