@@ -12,3 +12,13 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+.titleProjectItem{
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 5px;
+}
