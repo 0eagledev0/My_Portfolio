@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="buisnessCard.css">
     <link rel="stylesheet" href="responsivePresentationBuisnessCard.css">
     <link rel="stylesheet" href="item_text.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/DemonstrationProjectItem.css"/>
     <style>
         body {
             margin: 0;
@@ -17,6 +19,7 @@
         html {
             scroll-behavior: smooth;
         }
+
     </style>
 </head>
 <body>
@@ -35,10 +38,9 @@
     </a>
 </div>
 
-
 <div class="layout">
     <div class="Presentation">
-        <img class="ProfilePic" src="cc.png" />
+        <img class="ProfilePic" src="cc.png"  alt="Profile Picture"/>
     </div>
 
     <div class="buisnessCard">
@@ -85,7 +87,7 @@
     </div>
 </div>
 
-
+<!--==========About me===================-->
 <br id="About">
 <br >
 <br >
@@ -96,13 +98,14 @@
     </div>
 </div>
 <br>
+<!--=-->
 <div class="ItemText" >
-    <p  style="
-    color: #ffffff;
-    word-wrap: break-word">
+    <p>
         Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
 </div>
+ 
 
+<!--==========My projects===================-->
 <br id="projects">
 <br >
 <br >
@@ -113,31 +116,51 @@
     </div>
 </div>
 <br>
-<h2 class="titleProjectItem">hello</h2>
+<!--=-->
+
+<h2 class="titleProjectItem">Airbnb </h2>
 <div class="ItemText" >
-    <p  style="
-    color: #ffffff;
-    word-wrap: break-word">
-        Étudiant en génie logiciel à l'ÉTS, passionné par les technologies qui façonnent l'avenir. Avec une base solide acquise lors de ma technique au Collège de Rosemont, j'ai développé des compétences en Java, Python, Spring Boot au cours de mes stages. Je suis motivé par la création de solutions innovantes et performantes, notamment dans le développement backend. Curieux et proactif, je m'engage à relever des défis technologiques tout en apprenant constamment. Mon objectif est de contribuer à des projets ayant un impact réel et durable.</p>
+    <p>
+        Find inspiration, plan a trip with your group, book it, and go. You’ll always have access to important trip information. And you’ll never miss a beat with instant notifications about your travel plans and messages from your host.
+        Check-in times, special instructions, entry codes it’s all at hand, even when you’re offline. Have questions or just want some expert recommendations on local things to do or places to go? Everyone on the trip can message with the host in one chat thread.
+        Traveling a lot? Have extra space? You have an Airbnb. List your space in a few steps and get matched with an experienced Superhost in your area who can answer your questions and help you get started with hosting.
+    </p>
+</div>
+<div class="DemonstrationProjectItem">
+    <!-- Slider main container -->
+    <div class="swiper" >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper"  >
+            <!-- Video slide -->
+            <div class="swiper-slide">
+                <video
+                        class="slide-video swiper-no-swiping"
+                        controls
+                        preload="metadata"
+                        poster="projects/0.png"
+                >
+                    <source src="projects/0.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide" ><img src="projects/1.png"></div>
+            <div class="swiper-slide" ><img src="projects/2.png"></div>
+            <div class="swiper-slide" ><img src="projects/3.png"></div>
+            <div class="swiper-slide" ><img src="projects/4.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--==========My library===================-->
 <br id="library">
 <br >
 <br >
@@ -148,6 +171,8 @@
     </div>
 </div>
 <br >
+<!--=-->
+
 <div class="ItemText" >
     <p  style="
     color: #ffffff;
@@ -184,6 +209,7 @@
 </div>
 
 <script src="navbar.js"></script>
-
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiperSlideNavigation.js"></script>
 </body>
 </html>

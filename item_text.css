@@ -9,10 +9,19 @@
     justify-content: center;
     align-items: center;
     display: block;
-    margin-right: 15px;
-    margin-left: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+.ItemText p{
+    color: #ffffff;
+    word-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 .titleProjectItem{
+    font-size: 2rem;    /* 32px */
+    line-height: 1.2;
     color: white;
     flex-direction: column;
     justify-content: center;
@@ -21,4 +30,5 @@
     margin-right: 15px;
     margin-left: 15px;
     padding-left: 5px;
+    text-align: center;
 }

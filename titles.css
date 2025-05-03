@@ -10,13 +10,14 @@
     margin-left: 15px;
 }
 .title-title{
+    line-height: 1.2;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     color: #ffffff;
     font-size: 40px;
-    font-family: Ubuntu;
+    font-family: Ubuntu, serif;
     font-weight: 300;
     text-decoration: underline;
     letter-spacing: 2px;
