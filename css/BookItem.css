@@ -96,3 +96,24 @@
     width: auto;
     margin-right: 0.5em;
 }
+@media screen and (max-width: 900px) {
+    .BookItem{
+        width: 100%;
+    }
+    .BookInfos-title{
+        height: 15%;
+    }
+    .BookInfos-texte{
+        height: 80%;
+    }
+    .BookInfos-texte p{
+        line-height:1;
+    }
+    .BookInfos-amazon{
+        height: 5%;
+    }
+    .shiny-button img{
+        width: auto;
+        height: 60%;
+    }
+}
