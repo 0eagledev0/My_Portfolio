@@ -21,6 +21,7 @@
             scroll-behavior: smooth;
         }
 
+ 
     </style>
 </head>
 <body>
@@ -174,38 +175,77 @@
 </div>
 <br >
 <!--=-->
-<div class="BookItem">
-    <div class="BookPicture" >
-        <img src="projects/book.png"/>
+<div class="TableBook">
+    <div class="BookItem">
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
     </div>
-    <div class="BookInfos" >
-        <div class="BookInfos-title">
-            <h2>
-                Python for Finance
-            </h2>
-        </div>
-        <div class="BookInfos-texte">
-                <p>
-                    <strong>Résumé :</strong>
-                    <em>Python for Finance</em> explore comment tirer parti de Python pour l’analyse financière moderne.
-                    Vous y apprendrez à récupérer des données de marché avec <code>pandas</code> et <code>yfinance</code>, à effectuer des analyses de séries chronologiques,
-                    à évaluer des indicateurs techniques et des modèles statistiques, et à construire des portefeuilles optimisés.
-                    Le livre aborde également le backtesting de stratégies d’investissement, la gestion des risques et la visualisation avancée
-                    grâce à <code>matplotlib</code> et <code>seaborn</code>. C’est un guide pratique pour automatiser tâches financières et développer
-                    vos propres algorithmes de trading en Python.
-                </p>
-        </div>
-        <div class="BookInfos-amazon" >
-            <a href="https://www.amazon.ca/dp/1492024333?smid=ATVPDKIKX0DER&_encoding=UTF8&linkCode=gs2&tag=oreilly200b-20"
-           target="_blank" class="shiny-button">
-                <img
-                src="Amazon_logo.svg"
-                alt="Logo Amazon"/>
-            </a>
-        </div>
+    <div class="BookItem">
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+    </div>
+</div>
+<div class="TableBook">
+    <div class="BookItem">
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+    </div>
+    <div class="BookItem">
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
+        <a href="#popup1" class="BookPicture" >
+            <img  src="projects/book.png"/>
+        </a>
     </div>
 </div>
 
+
+<!-- Overlay + popup -->
+<div id="popup1" class="overlay" >
+    <div class="popup">
+        <a class="close" href="#library"><svg width="20px" height="20px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.9998 8L6 14L12.9998 21" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 14H28.9938C35.8768 14 41.7221 19.6204 41.9904 26.5C42.2739 33.7696 36.2671 40 28.9938 40H11.9984" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></a>
+        <h2>Python for Finance</h2>
+        <div class="BookInfos">
+            <p>
+                <strong>Résumé :</strong>
+                <em>Python for Finance</em> explore comment tirer parti de Python pour l’analyse financière moderne.
+                Vous y apprendrez à récupérer des données de marché avec <code>pandas</code> et <code>yfinance</code>, à effectuer des analyses de séries chronologiques,
+                à évaluer des indicateurs techniques et des modèles statistiques, et à construire des portefeuilles optimisés.
+                Le livre aborde également le backtesting de stratégies d’investissement, la gestion des risques et la visualisation avancée
+                grâce à <code>matplotlib</code> et <code>seaborn</code>. C’est un guide pratique pour automatiser tâches financières et développer
+                vos propres algorithmes de trading en Python.
+            </p>
+        </div>
+    </div>
+</div>
 
 <script src="navbar.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
